@@ -1,0 +1,27 @@
+{
+  "ethertype": {
+  "0800": "IPV4",
+  "0806": "ARP",
+  "86dd": "IPV6",
+  "8137": "Novell IPX"
+  },
+  "ip": {
+    "protocol": {
+      "01": "ICMP",
+      "02" : "IGMP",
+      "06": "TCP",
+      "11" : "UDP"
+    }
+  },
+  "tcp": {
+    "port": {
+      "0050": "http",
+      "01bb": "https"
+    }
+  },
+  "udp": {
+    "port": {
+      "0007": "echo"
+    }
+  }
+}
