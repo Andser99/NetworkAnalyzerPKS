@@ -1,9 +1,9 @@
 {
   "ethertype": {
-  "0800": "IPV4",
-  "0806": "ARP",
-  "86dd": "IPV6",
-  "8137": "Novell IPX"
+    "0800": "IPV4",
+    "0806": "ARP",
+    "86dd": "IPV6",
+    "9000": "Loopback"
   },
   "ip": {
     "protocol": {
@@ -13,15 +13,36 @@
       "11" : "UDP"
     }
   },
-  "tcp": {
-    "port": {
-      "0050": "http",
-      "01bb": "https"
-    }
+  "known_ports": {
+    "0050": "http",
+    "01bb": "https",
+    "0007": "echo",
+    "0017": "telnet",
+    "0016": "ssh",
+    "0015": "ftp-control",
+    "0014": "ftp-data",
+    "0045": "tftp"
   },
-  "udp": {
-    "port": {
-      "0007": "echo"
-    }
+  "icmp_type": {
+    "00": "Echo Reply",
+    "03": "Destination Unreachable",
+    "04": "Source Quench",
+    "05": "Redirect",
+    "08": "Echo",
+    "0b": "Time Exceeded",
+    "0c": "Parameter Problem",
+    "0d": "Timestamp",
+    "0e": "Timestamp Reply",
+    "0f": "Information Request",
+    "10": "Information Reply",
+    "11": "Address Mask Request",
+    "12": "Address Mask Reply",
+    "1e": "Traceroute"
+  },
+  "icmp_requestable": {
+    "0": "Address Mask Request",
+    "1": "Information Request",
+    "2": "Timestamp",
+    "3": "Echo"
   }
 }
